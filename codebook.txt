@@ -1,0 +1,101 @@
+Feature Selection 
+=================
+
+The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals 
+tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix 't' to denote time) were captured at a constant 
+rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter 
+with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated
+into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass 
+Butterworth filter with a corner frequency of 0.3 Hz. 
+
+Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals 
+(tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were 
+calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). 
+
+Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, 
+fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the 'f' to indicate 
+frequency domain signals). 
+
+These signals were used to estimate variables of the feature vector for each pattern:  
+'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.Notes: 
+
+Finally, all measurements were averaged by subject and activity to obtain the final columns as in the data set:
+Subject - An identifier for each person performing in the study. Ranges from 1 - 30
+Activity - 1 of 6 Activites performed from the set:
+	1 WALKING
+	2 WALKING_UPSTAIRS
+	3 WALKING_DOWNSTAIRS
+	4 SITTING
+	5 STANDING
+	6 LAYING
+AVG_tBodyAcc-mean()-X
+AVG_tBodyAcc-mean()-Y
+AVG_tBodyAcc-mean()-Z
+AVG_tBodyAcc-std()-X
+AVG_tBodyAcc-std()-Y
+AVG_tBodyAcc-std()-Z
+AVG_tGravityAcc-mean()-X
+AVG_tGravityAcc-mean()-Y
+AVG_tGravityAcc-mean()-Z
+AVG_tGravityAcc-std()-X
+AVG_tGravityAcc-std()-Y
+AVG_tGravityAcc-std()-Z
+AVG_tBodyAccJerk-mean()-X
+AVG_tBodyAccJerk-mean()-Y
+AVG_tBodyAccJerk-mean()-Z
+AVG_tBodyAccJerk-std()-X
+AVG_tBodyAccJerk-std()-Y
+AVG_tBodyAccJerk-std()-Z
+AVG_tBodyGyro-mean()-X
+AVG_tBodyGyro-mean()-Y
+AVG_tBodyGyro-mean()-Z
+AVG_tBodyGyro-std()-X
+AVG_tBodyGyro-std()-Y
+AVG_tBodyGyro-std()-Z',
+AVG_tBodyGyroJerk-mean()-X
+AVG_tBodyGyroJerk-mean()-Y
+AVG_tBodyGyroJerk-mean()-Z
+AVG_tBodyGyroJerk-std()-X
+AVG_tBodyGyroJerk-std()-Y
+AVG_tBodyGyroJerk-std()-Z
+AVG_tBodyAccMag-mean()
+AVG_tBodyAccMag-std()
+AVG_tGravityAccMag-mean()
+AVG_tGravityAccMag-std()
+AVG_tBodyAccJerkMag-mean()
+AVG_tBodyAccJerkMag-std()
+AVG_tBodyGyroMag-mean()
+AVG_tBodyGyroMag-std()
+AVG_tBodyGyroJerkMag-mean()
+AVG_tBodyGyroJerkMag-std()
+AVG_fBodyAcc-mean()-X
+AVG_fBodyAcc-mean()-Y
+AVG_fBodyAcc-mean()-Z
+AVG_fBodyAcc-std()-X
+AVG_fBodyAcc-std()-Y
+AVG_fBodyAcc-std()-Z
+AVG_fBodyAccJerk-mean()-X
+AVG_fBodyAccJerk-mean()-Y
+AVG_fBodyAccJerk-mean()-Z
+AVG_fBodyAccJerk-std()-X
+AVG_fBodyAccJerk-std()-Y
+AVG_fBodyAccJerk-std()-Z
+AVG_fBodyGyro-mean()-X
+AVG_fBodyGyro-mean()-Y
+AVG_fBodyGyro-mean()-Z
+AVG_fBodyGyro-std()-X
+AVG_fBodyGyro-std()-Y
+AVG_fBodyGyro-std()-Z
+AVG_fBodyAccMag-mean()
+AVG_fBodyAccMag-std()
+AVG_fBodyBodyAccJerkMag-mean()
+AVG_fBodyBodyAccJerkMag-std()
+AVG_fBodyBodyGyroMag-mean()
+AVG_fBodyBodyGyroMag-std()
+AVG_fBodyBodyGyroJerkMag-mean()
+AVG_fBodyBodyGyroJerkMag-std()
+
+======
+- Features are normalized and bounded within [-1,1].
+- mean(): Mean value
+- std(): Standard deviation
